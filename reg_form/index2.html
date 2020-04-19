@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="modal__panel">
+           <div class="tabs modal__tabs">
+                
+                    <input class="tabs__field" type="radio" id="tab-1" name="tabs" checked>
+                    <label class="tabs__label" for="tab-1" title="Sign In">Sign In</label>
+                    <input class="tabs__field" type="radio" id="tab-2" name="tabs">
+                    <label class="tabs__label" for="tab-2" title="Join Us">Join Us</label>
+                    <form action="" method="POST" class="form" id="form-1" autocomplete="off">
+                            <label class="form__label">Username
+                                <input class="form__field" type="text" name="name" minlength="3" required>
+                            </label>
+                            <label class="form__label">password
+                                <input  class="form__field" type="password" name="password" minlength="3" required>
+                            </label>
+
+                            <div class="form--checkbox">
+
+                                <input checked class="form__field--checkbox" type="checkbox" name="checkbox">
+                                <label class="form__label--checkbox" for="">
+                                    <span class="form__label--checkbox--visible">&#10004;</span>
+                                    Keep me signed in</label>
+                            </div>
+                            
+                            <button type="submit" class="btn">Sign In</button>
+                            <div class="form__links">
+                                <a class="form__link" href="">Forgot password</a>
+                                <a class="form__link" href="">Create an account</a>
+                            </div>
+                    </form>
+                    <form action="" method="POST" class="form" id="form-2" autocomplete="off">
+                            <label class="form__label">Username
+                                <input class="form__field" type="text" name="name" minlength="3" required>
+                            </label>
+                            <label class="form__label">password
+                                <input  class="form__field" type="password" name="password" minlength="3" required>
+                            </label>
+                            <label class="form__label">repeat password
+                                <input  class="form__field" type="repeat_password" name="repeat_password" minlength="3" required>
+                            </label>
+                            <button type="submit" class="btn">Join Us</button>
+                    </form>
+                
+           </div>
+        </div>
+    </div>
+</body>
+</html>
